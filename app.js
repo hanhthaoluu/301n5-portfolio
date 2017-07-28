@@ -1,5 +1,10 @@
-function projectData (name, path, skills) {
+'use strict';
+function projectData (name, path, description) {
   this.projectName = name;
   this.path = path;
-  this.skills = skills;
+  this.description = description;
+}
+
+$(document).ready(function) {
+
 }
