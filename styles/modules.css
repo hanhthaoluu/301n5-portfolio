@@ -2,3 +2,48 @@
   font-size: 3.1em;
   float: right;
 }
+
+h1 {
+  font-size: 40px;
+}
+
+
+#welcome {
+  display: block;
+  float: left;
+  padding: 100px;
+}
+
+.main-nav{
+  display: block;
+  float: left;
+}
+
+#welcome {
+  text-align: center;
+  font-size: 20px;
+  font-family: calibri;
+}
+
+@media only screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
+
+  .main-nav {
+    padding: .2em .2em .2em 2em;
+  }
+
+  .main-nav ul {
+    display: block;
+  }
+
+  .main-nav ul li {
+    display: inline;
+    border-bottom: 10px;
+  }
+
+  .main-nav ul li:hover a {
+    color: #29506D;
+  }
+}

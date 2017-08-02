@@ -5,6 +5,6 @@ function projectData (name, path, description) {
   this.description = description;
 }
 
-$(document).ready(function) {
+$(document).ready(function(){
 
-}
+});
