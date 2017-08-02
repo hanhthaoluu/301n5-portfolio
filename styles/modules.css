@@ -5,24 +5,23 @@
 
 h1 {
   font-size: 40px;
+  float: left;
+  width: 100%;
 }
 
 
 #welcome {
   display: block;
   float: left;
-  padding: 100px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main-nav{
   display: block;
   float: left;
-}
-
-#welcome {
-  text-align: center;
-  font-size: 20px;
-  font-family: calibri;
+  width: 100%;
 }
 
 @media only screen and (min-width: 640px) {
