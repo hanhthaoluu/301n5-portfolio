@@ -10,5 +10,5 @@ $(document).ready(function(){
 });
 
 $('.main-nav').on('mouseover', function() {
-  $(this).css("background-color", "green");
+  $(this).css("background-color", "grey");
 });
