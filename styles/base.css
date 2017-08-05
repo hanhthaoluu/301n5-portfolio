@@ -1,6 +1,7 @@
 body {
   width: 100%;
   height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 #welcome{
@@ -16,4 +17,9 @@ height: 100%;
 #myHomePicture {
   width: 50%;
   height: 100%;
+}
+
+em {
+  font-weight: 700;
+  font-size: 30px;
 }

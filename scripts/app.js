@@ -6,7 +6,8 @@ function projectData (name, path, description) {
 }
 
 $(document).ready(function(){
-  $('.content div').not('#content-home').children().hide();
+  $('.content').children().not('#content-home').hide();
+
 });
 
 $('.main-nav').on('mouseover', function() {
@@ -15,10 +16,9 @@ $('.main-nav').on('mouseover', function() {
 
 $('.main-nav ul li').click(function(e) {
   e.preventDefault();
-  var id = $(this).attr('id');
-  $('.content div').not(`#content-${id}`).children().hide();
-  $(`#content-${id}`).children().children().show();
-  $(`#content-${id}`).children().show();
-  $(`#content-${id}`).children().children().children().show();
+  $('.content').children().hide();
+  $(`#content-${$(this).attr('id')}`).show();
+  //backtick character is for string template to avoid doing string concatenation
+  //$(`#${$(this).attr('id')}`).show();
 
 });
