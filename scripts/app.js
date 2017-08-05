@@ -6,7 +6,7 @@ function projectData (name, path, description) {
 }
 
 $(document).ready(function(){
-  $('.content div').not('.home').hide();
+  $('.content div').not('#content-home').children().hide();
 });
 
 $('.main-nav').on('mouseover', function() {
@@ -15,10 +15,10 @@ $('.main-nav').on('mouseover', function() {
 
 $('.main-nav ul li').click(function(e) {
   e.preventDefault();
-  var $id = $(this).attr('id');
-console.log($id);
-  $(`.${$id}`).show();
-  $('.content div').not(`.${$(this).attr('id')}`).hide();
-
+  var id = $(this).attr('id');
+  $('.content div').not(`#content-${id}`).children().hide();
+  $(`#content-${id}`).children().children().show();
+  $(`#content-${id}`).children().show();
+  $(`#content-${id}`).children().children().children().show();
 
 });
