@@ -11,7 +11,7 @@ function Article (rawDataObj) {
 
 Article.prototype.toHtml = function() {
   var $newArticle = $('.template').clone();
-  $newArticle.removeClass("template");
+  $newArticle.removeClass('template');
   $newArticle.find('.place').text(this.place).css('font-weight', 'bolder');
   $newArticle.find('.activities').html(this.activities);
   //backtick is a string template
