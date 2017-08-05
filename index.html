@@ -20,33 +20,83 @@
         <div class="icon-menu">
         </div>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="seattleOutdoors.html">Seattle Outdoors</a></li>
+          <li id="home"><a href="#">Home</a></li>
+          <li id="resume"><a href="#">Resume</a></li>
+          <li id="portfolio"><a href="#">Portfolio</a></li>
+          <li id="outdoors"><a href="#">Seattle Outdoors</a></li>
         </ul>
       </nav>
+
       <h1>Welcome to Thao's Page!</h1>
-      <div class="mainBody">
-        <div class="page-content" id="opening-statement">Hello there! My name is Hanh-Thao Luu (Thao).</div>
-        <div class="page-content" id="an-overview-of-me">AN OVERVIEW OF ME</div>
-          <p> I am living in Seattle WA. <br />
-          Currently, I am enrolling at Code Fellows to master programming. <br />
-          My career goal is to become a software-developer. <br />
-          I am a self-motivated, persistent and diligent person. <br />
-          I like to think creatively to make the impossible possible. <br />
-          My goals in life are to be an excellent software developer, <br />
-          a loving and supportive mother of two wonderful kids, and <br />
-          a responsible citizen contributing to make life better for the humankind<br />
-          and to preserve Earth.</p>
+      <div class="content">
+        <div class="home">
+          <div class="page-content" id="opening-statement">Hello there! My name is Hanh-Thao Luu (Thao).</div>
+          <div class="page-content" id="an-overview-of-me">AN OVERVIEW OF ME</div>
+            <p> I am living in Seattle WA. <br />
+            Currently, I am enrolling at Code Fellows to master programming. <br />
+            My career goal is to become a software-developer. <br />
+            I am a self-motivated, persistent and diligent person. <br />
+            I like to think creatively to make the impossible possible. <br />
+            My goals in life are to be an excellent software developer, <br />
+            a loving and supportive mother of two wonderful kids, and <br />
+            a responsible citizen contributing to make life better for the humankind<br />
+            and to preserve Earth.</p>
+          <img id="myHomePicture" src="images/IMG_0093_2.jpg"/>
+        </div>
+        <div class="resume">
+          <div class="mainBody">
+            <div class="page-content" id="education">EDUCATION</div>
+              <p>I graduated from the University of Washington
+              with a BS in Microbiology and a BA in Psychology. I worked in the healthcare industry <br />
+              for about six years before discovering my great interest in programming. Currently, I am studying at Code Fellows to master programming to build practical and helpful apps for others to use.<br />
+              CodeFellows has provided me the excellent support and education to be an exceptional developer.</p>
+            <div class="page-content" id="work-experience">WORK EXPERIENCE</div>
+                <ol id="pastJobDescriptions">
+                  <li class="page-content" id="smc-interpreter-job-description">Vietnamese Medical Interpreter and Translator: Sept 2015-April 2017 Swedish Medical Center, Seattle WA <br />Provide in-person and Video Remote Interpretation for all hospital departments;  Translate and edit patient care education materials; Make patient reminder phone calls and connect patients to clinic when patients have questions; Serve as a cultural broker to enhance communication and cultural understanding and to build a trusting relationship between providers and patients; Communicate with patients to determine any needs or questions and relay information to providers<br /></li>
+                  <li class="page-content" id="independent-contractor-interpreter-job-description">Independent Contractor/Vietnamese Interpreter and Translator: Nov 2012-April 2017<br />Providing in-person and over-the-phone interpretation for many medical professionals (Swedish Medical Center, Harborview Medical Center, Valley Medical Center, GroupHealth, Virginia Mason Medical Center…), teachers (Seattle Public Schools, Highline Public Schools…), therapists (Gentiva Home Health, Evergreen Home Health, Evergreen Hospice...), counselors (NAVOS Mental Health Solutions…), social workers, judges and lawyers (Kent Municipal Court, Seattle Municipal Court, Board of Industrial Insurance Appeals, King County Bar Association); Translating various documents, such as affidavits, memoranda, employer letters, complaint letters, open enrollment (401K and insurance changes) information.
+                  </li>
+                  <li class="page-content" id="king-county-translator-job-description">Vietnamese Translator: Apr 2012-Oct 2012 King County Elections, Renton, WA<br />Translated voting materials, including voters’ pamphlets, ballots, candidate statements, propositions, referenda.
+                  Served as an interpreter, helping Vietnamese Americans to register to vote, to request Vietnamese voting materials, and to understand the voter registration and voting process.
+                  Participated in outreach events to bring awareness about language services to the Vietnamese community
+                  </li>
+                  <li class="page-content" id="srm-lab-tech-job-description">Laboratory Technician: Jun 2009-April 2012; Seattle Reproductive Medicine, Seattle, WA<br />Performed semen analyses and maintained sperm inventory
+                  Prepared sperm for cryopreservation, Intrauterine Insemination (IUI) and In Vitro Fertilization (IVF)
+                  Performed endocrine hormone assays and CBC for infertility patients
+                  Trained new technicians on endocrinology
+                  Analyzed and entered test reports into databases (Artworks) in a timely manner
+                  Performed daily quality control for procedures and equipment
+                  Performed maintenance and repairs on the endocrine assay machine (Immulite 2000)
+                  Took inventories and placed supply orders
+                  Organized and prioritized tasks in order to meet daily deadlines
+                  Communicated with medical staff to provide high quality patient care
+                  </li>
+                </ol>
+          </div>
+        </div>
+        <div class="portfolio"></div>
+        <div class="seattleOutdoors">
+          <section id="articles">
+            <h1>Ten top outdoor activities to do in the Greater Seattle Area</h1>
+              <article class="template">
+              <div class="place">Place</div>
+              <div class="activities">Activities</div>
+              <div class="address">Address</div>
+              <a href="" class="website">Website</a>
+            </article>
+          </section>
+        </div>
       </div>
-    </div>
-    <img id="myHomePicture" src="images/IMG_0093_2.jpg"/>
+
+
+
+
     <!-- <div class="myHomePictureContainer">
       <img id="myHomePicture" src="images/IMG_0093_2.jpg"/>
     </div> -->
         <script src="jquery-3.2.1.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-        <script src="app.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/seattleOutdoors.js"></script>
+        <script src="scripts/outdoors.js"></script>
   </body>
 </html>
