@@ -10,12 +10,13 @@ function Article (rawDataObj) {
 }
 
 Article.prototype.toHtml = function() {
-  var $newArticle = $('article.template').clone();
+  var $newArticle = $('.template').clone();
   $newArticle.removeClass("template");
-  $newArticle.find('.place').text(this.place);
+  $newArticle.find('.place').text(this.place).css('font-weight', 'bolder');
   $newArticle.find('.activities').html(this.activities);
-  $newArticle.find('.address').text(this.address);
-  $newArticle.find('.website').attr(this.website);
+  //backtick is a string template
+  $newArticle.find('.address').text(`Address: ${this.address}`);
+  $newArticle.find('.website').text(this.website).attr('href', this.website);
   $newArticle.append('<hr>');
   return $newArticle;
 };
