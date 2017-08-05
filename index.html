@@ -5,12 +5,22 @@
     <title>HanhThao Luu's Portfolio</title>
 
     <meta name = "viewport" content = "width = device-width, initial-scale =1" />
+    <link rel="stylesheet" href="styles/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
-    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/icons.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <script id="article-template" type="text/x-handlebars-template">
+      <article class="clearfix">
+      <div class="place">{{{Place}}}</div>
+      <div class="activities">{{{Activities}}}</div>
+      <div class="address">{{Address}}</div>
+      <a href="{{website}}" class="website">{{Website}}</a>
+      </article>
+
+    </script>
   </head>
   <body>
 
@@ -29,9 +39,9 @@
       <h1>Welcome to Thao's Page!</h1>
       <div class="content">
         <div id="content-home">
-          <div class="page-content" id="opening-statement">Hello there! My name is Hanh-Thao Luu (Thao).</div>
-          <div class="page-content" id="an-overview-of-me">AN OVERVIEW OF ME</div>
-            <p> I am living in Seattle WA. <br />
+          <div class="page-content" id="opening-statement">Hello! My name is Hanh-Thao Luu (Thao).</div>
+
+            <p> I live in Seattle WA. <br />
             Currently, I am enrolling at Code Fellows to master programming. <br />
             My career goal is to become a software-developer. <br />
             I am a self-motivated, persistent and diligent person. <br />
@@ -73,18 +83,9 @@
           </div>
         </div>
         <div id="content-portfolio"></div>
-        <div id="content-seattleOutdoors">
-          <section id="articles">
-            <h1>Ten top outdoor activities to do in the Greater Seattle Area</h1>
-              <article class="template">
-              <div class="place">Place</div>
-              <div class="activities">Activities</div>
-              <div class="address">Address</div>
-              <a href="" class="website">Website</a>
-            </article>
-          </section>
-        </div>
+        <div id="content-seattleOutdoors"></div>
       </div>
+    </div>
 
 
 
@@ -92,6 +93,7 @@
     <!-- <div class="myHomePictureContainer">
       <img id="myHomePicture" src="images/IMG_0093_2.jpg"/>
     </div> -->
+        <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v4.0.10.js"></script>
         <script src="jquery-3.2.1.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
         <script src="scripts/app.js"></script>
