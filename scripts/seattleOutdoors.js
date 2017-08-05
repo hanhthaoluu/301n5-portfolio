@@ -61,4 +61,4 @@ var rawData = [
     address: '9322 196th St SE, Snohomish, WA 98296'
     website: 'www.flowerworldusa.com'
   },
-]
+];
