@@ -1,5 +1,5 @@
 'use strict';
-function projectData (name, path, description) {
+function projectData (projectName, path, description) {
   this.projectName = name;
   this.path = path;
   this.description = description;
@@ -7,7 +7,7 @@ function projectData (name, path, description) {
 
 $(document).ready(function(){
   $('.content').children().not('#content-home').hide();
-
+  
 });
 
 $('.main-nav').on('mouseover', function() {

@@ -17,28 +17,28 @@ var educationData = [
 
 var resumeData = [
   {
-    title: 'Vietnamese Medical Interpreter and Translator',
+    title: '<em>Vietnamese Medical Interpreter and Translator</em>',
     duration: 'Sept 2015-April 2017',
     employer: 'Swedish Medical Center',
     city: 'Seattle WA',
     description: 'Provide in-person and Video Remote Interpretation for all hospital departments;  Translate and edit patient care education materials; Make patient reminder phone calls and connect patients to clinic when patients have questions; Serve as a cultural broker to enhance communication and cultural understanding and to build a trusting relationship between providers and patients; Communicate with patients to determine any needs or questions and relay information to providers'
   },
   {
-    title: 'Independent Contractor/Vietnamese Interpreter and Translator',
+    title: '<em>Vietnamese Interpreter and Translator</em>',
     duration: 'Nov 2012-April 2017',
     employer: 'self-employed',
     city: 'Seattle WA',
     description: 'Providing in-person and over-the-phone interpretation for many medical professionals (Swedish Medical Center, Harborview Medical Center, Valley Medical Center, GroupHealth, Virginia Mason Medical Center…), teachers (Seattle Public Schools, Highline Public Schools…), therapists (Gentiva Home Health, Evergreen Home Health, Evergreen Hospice...), counselors (NAVOS Mental Health Solutions…), social workers, judges and lawyers (Kent Municipal Court, Seattle Municipal Court, Board of Industrial Insurance Appeals, King County Bar Association); Translating various documents, such as affidavits, memoranda, employer letters, complaint letters, open enrollment (401K and insurance changes) information.'
   },
   {
-    title: 'Vietnamese Translator',
+    title: '<em>Vietnamese Translator</em>',
     duration: 'Apr 2012-Oct 2012',
     employer: 'King County Elections',
     city: 'Renton WA',
     description: 'Translated voting materials, including voters’ pamphlets, ballots, candidate statements, propositions, referenda. Served as an interpreter, helping Vietnamese Americans to register to vote, to request Vietnamese voting materials, and to understand the voter registration and voting process. Participated in outreach events to bring awareness about language services to the Vietnamese community.'
   },
   {
-    title: 'Laboratory Technician',
+    title: '<em>Laboratory Technician</em>',
     duration: 'Jun 2009-April 2012',
     employer: 'Seattle Reproductive Medicine',
     city: 'Seattle WA',
