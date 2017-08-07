@@ -5,13 +5,19 @@ body {
 }
 
 #welcome{
-width: 50%;
+width: 100%;
 height: 100%;
 }
 
 .main-nav {
   padding: 0;
   display:block;
+}
+
+#welcome h1 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 80px;
+
 }
 
 #myHomePicture {
@@ -22,4 +28,26 @@ height: 100%;
 em {
   font-weight: 700;
   font-size: 30px;
+}
+
+#uw {
+  height: 300px;
+  width: 350px;
+  margin: 50px;
+}
+
+#codeFellows {
+  height: 100px;
+  width: 400px;
+  margin: 50px;
+}
+
+#cherryBlossoms {
+  height: 350px;
+  width: 300px;
+}
+
+#tulips, #olympicFarmGame, #carkeek {
+  height: 300px;
+  width: 400px;
 }
