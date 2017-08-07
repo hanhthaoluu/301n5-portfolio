@@ -47,6 +47,6 @@ resumeData.forEach(function(workExperienceObject){
   workExperiences.push(new WorkExperience(workExperienceObject));
 });
 
-workExperiences.forEach(function(workExperience) {
-  $('#content-portfolio').append(workExperience.toHtml());
+workExperiences.forEach(function(WorkExperience) {
+  $('#content-portfolio').append(WorkExperience.toHtml());
 });

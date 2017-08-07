@@ -16,7 +16,7 @@ var rawData = [
   {
     place: '<em>Carkeek Park</em>',
     picture: '<img id="carkeek" src="images/IMG_0967.jpg" alt="carkeek park picture">',
-    activities: '<p>View the breathtaking view of the Puget Sound up high from the Carkeek Park Play Area and then walk down to the beach. During the lowest tides you can admire starfish, sea cucumbers, sea anemones, crabs, and other sea creatures in their natural habitats.</p>',
+    activities: '<p>Enjoy the breathtaking view of the Puget Sound up high from the Carkeek Park Play Area and then walk down to the beach. During the lowest tides you can admire starfish, sea cucumbers, sea anemones, crabs, and other sea creatures in their natural habitats.</p>',
     address: '950 NW Carkeek Park Rd, Seattle, WA 98177',
     website: 'https://www.seattle.gov/parks/find/parks/carkeek-park'
   },
