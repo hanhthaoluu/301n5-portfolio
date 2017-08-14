@@ -1,4 +1,4 @@
-
+[
 {
   "educationData": [
     {
@@ -14,7 +14,7 @@
       "degreeCertificate": "Programming Certificate in progress"
     },
   ]
-}
+},
 {
   "resumeData": [
     {
@@ -47,3 +47,4 @@
     },
   ]
 }
+]
