@@ -50,3 +50,23 @@ resumeData.forEach(function(workExperienceObject){
 workExperiences.forEach(function(WorkExperience) {
   $('#content-portfolio').append(WorkExperience.toHtml());
 });
+
+School.fetchAll = function() {
+  if (!localStorage.rawData) {
+    $.getJSON('./scripts/resumeData.json', function(data) {
+      localStorage.setItem('rawData', JSON.stringify(data));
+    });
+  }
+
+  School.loadAll(JSON.parse(localStorage.rawData));
+}
+
+WorkExperience.fetchAll = function() {
+  if (!localStorage.rawData) {
+    $.getJSON('./scripts/resumeData.json', function(data) {
+      localStorage.setItem('rawData', JSON.stringify(data));
+    });
+  }
+
+  WorkExperience.loadAll(JSON.parse(localStorage.rawData));
+}
