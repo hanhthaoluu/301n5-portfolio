@@ -15,7 +15,7 @@
 
     <script id="article-template" type="text/x-handlebars-template">
       <article class="clearfix">
-      <div class="place">{{{Place}}}</div>
+      <div class="place"><em>{{Place}}</em></div>
       <div class="picture">{{{Picture}}}</div>
       <div class="activities">{{{Activities}}}</div>
       <div class="address">{{Address}}</div>
@@ -25,8 +25,8 @@
 
     <script id="education-template" type="text/x-handlebars-template">
       <article class="clearfix">
-      <div class="schoolImage">{{{schoolImage}}}</div>
-      <div class="school">{{{School}}}</div>
+      <div class="schoolImage"><img id="uw" src={{schoolImage}} alt="UW logo"></div>
+      <div class="school"><em>{{School}}</em></div>
       <div class="location">{{Location}}</div>
       <div class="degreeCertificate">{{{Degree}}}</div>
       </article>
@@ -35,7 +35,7 @@
 
     <script id="resume-template" type="text/x-handlebars-template">
       <article class="clearfix">
-      <div class="title">{{{Title}}}</div>
+      <div class="title"><em>{{Title}}</em></div>
       <div class="duration">{{Duration}}</div>
       <div class="employer">{{Employer}}</div>
       <div class="city">{{City}}</div>
@@ -92,5 +92,10 @@
         <script src="scripts/resume.js"></script>
         <script src="scripts/seattleOutdoors.js"></script>
         <script src="scripts/outdoors.js"></script>
+        <script>
+          Article.fetchAll();
+          School.fetchAll();
+          WorkExperience.fetchAll();
+        </script>
   </body>
 </html>

@@ -25,3 +25,11 @@ rawData.forEach(function(articleObject) {
 articles.forEach(function(article) {
   $('#content-seattleOutdoors').append(article.toHtml());
 });
+
+Article.fetchAll = function() {
+  if (!localStorage.rawData) {
+    $.getJSON('./scripts/seattleOutdoors.json', function(data) {
+      localStorage.setItem('rawData', JSON.stringify(data));
+    });
+  }
+}

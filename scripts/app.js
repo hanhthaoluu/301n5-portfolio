@@ -7,7 +7,7 @@ function projectData (projectName, path, description) {
 
 $(document).ready(function(){
   $('.content').children().not('#content-home').hide();
-  
+
 });
 
 $('.main-nav').on('mouseover', function() {
