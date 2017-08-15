@@ -1,0 +1,23 @@
+{
+  "name": "301n5-portfolio",
+  "version": "1.0.0",
+  "description": "HANH-THAO LUU'S PORTFOLIO",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanhthaoluu/301n5-portfolio.git"
+  },
+  "author": "HANH-THAO LUU",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hanhthaoluu/301n5-portfolio/issues"
+  },
+  "homepage": "https://github.com/hanhthaoluu/301n5-portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4"
+  }
+}
