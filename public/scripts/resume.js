@@ -54,7 +54,7 @@ workExperiences.forEach(function(WorkExperience) {
 School.fetchAll = function() {
   if (!localStorage.educationData) {
     console.log('fetchAll fire');
-    $.getJSON('./data/resumeData.json', function(data) {
+    $.getJSON('./public/data/resumeData.json', function(data) {
       console.log(data);
       localStorage.educationData = JSON.stringify(data);
     }).fail(function(res, text, error){
@@ -68,7 +68,7 @@ School.fetchAll = function() {
 
 WorkExperience.fetchAll = function() {
   if (!localStorage.resumeData) {
-    $.getJSON('./data/resumeData.json', function(data) {
+    $.getJSON('./public/data/resumeData.json', function(data) {
       localStorage.resumeData = JSON.stringify(data);
     }).fail(function(res, text, error){
       console.log(error);
