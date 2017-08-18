@@ -17,14 +17,6 @@ School.prototype.toHtml = function() {
   return html;
 };
 
-educationData.forEach(function(schoolObject) {
-  schools.push(new School(schoolObject));
-});
-
-schools.forEach(function(school) {
-  $('#content-resume').append(school.toHtml());
-});
-
 var workExperiences = [];
 
 function WorkExperience (resumeDataObj) {
@@ -47,34 +39,38 @@ resumeData.forEach(function(workExperienceObject){
   workExperiences.push(new WorkExperience(workExperienceObject));
 });
 
-workExperiences.forEach(function(WorkExperience) {
-  $('#content-portfolio').append(WorkExperience.toHtml());
-});
 //not instance of school
 School.fetchAll = function() {
   if (!localStorage.educationData) {
     console.log('fetchAll fire');
-    $.getJSON('./public/data/resumeData.json', function(data) {
+    $.getJSON('./data/resumeData.json', function(data) {
       console.log(data);
       localStorage.educationData = JSON.stringify(data);
     }).fail(function(res, text, error){
       console.log(error);
     });
   }
+
+  $.each((localStorage.educationData),function(index, value) {
+    schools.push(new School(value));
+  });
   schools.forEach(function(school) {
-    school.toHtml(JSON.parse(localStorage.educationData));
+    console.log(school);
+
+    $('#school').append(school);
   });
 }
 
-WorkExperience.fetchAll = function() {
-  if (!localStorage.resumeData) {
-    $.getJSON('./public/data/resumeData.json', function(data) {
-      localStorage.resumeData = JSON.stringify(data);
-    }).fail(function(res, text, error){
-      console.log(error);
-    });
-  }
-  workExperiences.forEach(function(workExperience) {
-    workExperience.toHtml(JSON.parse(localStorage.resumeData));
-  });
-}
+// WorkExperience.fetchAll = function() {
+//   if (!localStorage.resumeData) {
+//     $.getJSON('./data/resumeData.json', function(data) {
+//       localStorage.resumeData = JSON.stringify(data);
+//     }).fail(function(res, text, error){
+//       console.log(error);
+//     });
+//   }
+//   workExperiences.forEach(function(workExperience) {
+//     console.log(workExperience);
+//     let template = Handlebars.compile($('#resume-template').html());
+//     $('#work').append(template(workExperience));
+//   });
