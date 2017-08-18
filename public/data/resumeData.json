@@ -1,21 +1,4 @@
-[{
-  "educationData": [
-    {
-      "schoolImage": "./public/images/uw-college-of-arts-sciences-logo_0.jpg",
-      "School": "University of Washington",
-      "Location": "Seattle WA",
-      "Degree": "Bachelor of Science in Microbiology <br /> Bachelor of Arts in Psychology"
-    },
-    {
-      "schoolImage": "./public/images/hi-res-code-fellows-logo-2.png",
-      "School": "Code Fellows",
-      "Location": "Seattle WA",
-      "Degree": "Programming Certificate in progress"
-    }
-  ]
-},
-{
-  "resumeData": [
+[
     {
       "Title": "Vietnamese Medical Interpreter and Translator",
       "Duration": "Sept 2015-April 2017",
@@ -45,5 +28,3 @@
       "Description": "Performed semen analyses and maintained sperm inventory; Prepared sperm for cryopreservation, Intrauterine Insemination (IUI) and In Vitro Fertilization (IVF); Performed endocrine hormone assays and CBC for infertility patients; Trained new technicians on endocrinology; Analyzed and entered test reports into databases (Artworks) in a timely manner; Performed daily quality control for procedures and equipment; Performed maintenance and repairs on the endocrine assay machine (Immulite 2000); Took inventories and placed supply orders. Organized and prioritized tasks in order to meet daily deadlines; Communicated with medical staff to provide high quality patient care."
     }
   ]
-}
-]
