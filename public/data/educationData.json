@@ -1,0 +1,14 @@
+[
+    {
+      "schoolImage": "./images/uw-college-of-arts-sciences-logo_0.jpg",
+      "School": "University of Washington",
+      "Location": "Seattle WA",
+      "Degree": "Bachelor of Science in Microbiology <br /> Bachelor of Arts in Psychology"
+    },
+    {
+      "schoolImage": "./images/hi-res-code-fellows-logo-2.png",
+      "School": "Code Fellows",
+      "Location": "Seattle WA",
+      "Degree": "Programming Certificate in progress"
+    }
+]
