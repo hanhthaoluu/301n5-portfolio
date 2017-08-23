@@ -17,11 +17,11 @@
 
     <script id="article-template" type="text/x-handlebars-template">
       <article class="clearfix">
-      <div class="place"><em>{{Place}}</em></div>
-      <div class="picture">{{{Picture}}}</div>
-      <div class="activities">{{{Activities}}}</div>
-      <div class="address">{{Address}}</div>
-      <a href="{{website}}" class="website">{{Website}}</a>
+      <div class="place"><em>{{place}}</em></div>
+      <img class="picture" src="{{picture}}">
+      <div class="activities">{{{activities}}}</div>
+      <div class="address">{{address}}</div>
+      <a href="{{website}}" class="website">{{website}}</a>
       </article>
     </script>
 
@@ -94,9 +94,9 @@
         <script src="scripts/resumeData.js"></script>
         <script src="scripts/resume.js"></script>
         <script src="scripts/seattleOutdoors.js"></script>
-        <script src="scripts/outdoors.js"></script>
-        <script>
+        <!-- <script src="scripts/outdoors.js"></script> -->
+        <!-- <script>
           Article.fetchAll();
-        </script>
+        </script> -->
   </body>
 </html>

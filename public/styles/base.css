@@ -49,12 +49,6 @@ em {
   margin: 50px;
 }
 
-#cherryBlossoms {
-  height: 350px;
-  width: 300px;
-}
-
-#tulips, #olympicFarmGame, #carkeek {
-  height: 300px;
-  width: 400px;
+#content-seattleOutdoors img {
+  width: 80%;
 }
