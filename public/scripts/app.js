@@ -14,6 +14,11 @@ $('.main-nav').on('mouseover', function() {
   $(this).css("background-color", "grey");
 });
 
+$('.icon-menu').click(function() {
+  var $navList = $('.main-nav>ul');
+  $navList.attr('id') === 'hidden' ? $navList.attr('id', '') : $navList.attr('id', 'hidden');
+});
+
 $('.main-nav ul li').click(function(e) {
   e.preventDefault();
   $('.content').children().hide();
