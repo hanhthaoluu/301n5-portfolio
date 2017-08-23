@@ -14,7 +14,7 @@
     },
     {
       "place": "Carkeek Park",
-      "picture": "images/IMG_0967.jpg",
+      "picture": "./public/images/IMG_0967.jpg",
       "activities": "Enjoy the breathtaking view of the Puget Sound up high from the Carkeek Park Play Area and then walk down to the beach. During the lowest tides you can admire starfish, sea cucumbers, sea anemones, crabs, and other sea creatures in their natural habitats.",
       "address": "950 NW Carkeek Park Rd, Seattle, WA 98177",
       "website": "https://www.seattle.gov/parks/find/parks/carkeek-park"
@@ -27,7 +27,7 @@
     },
     {
       "place": "Olympic Farm Game",
-      "picture": "images/imgsvr.jpeg",
+      "picture": "./public/images/imgsvr.jpeg",
       "activities": "Go to the Olympic Farm Game to visit all the exotic animals and feed the goats.",
       "address": "1423 Ward Rd, Sequim, WA 98382",
       "website": "http://olygamefarm.com/"
@@ -47,14 +47,14 @@
     },
     {
       "place": "UW Quad Cherry Blossoms",
-      "picture": "images/IMG_0868.jpg",
+      "picture": "./public/images/IMG_0868.jpg",
       "activities": "In April, see the cherry blossoms at the UW Quad. Remember to track the blooms with Cherry Blossoms Live Stream at http://uwtv.org/uw-quad-cherry-blossom-cam/ so you don\'t miss the special moment. April showers and winds tend to blow the blossoms away very quickly.",
       "address": "4060 George Washington Lane Northeast, Seattle, WA 98195",
       "website": "http://www.washington.edu/externalaffairs/2017/03/22/cherry-blossoms-live-stream/"
     },
     {
       "place": "Tulips Festival",
-      "picture": "images/IMG_0052.jpg",
+      "picture": "./public/images/IMG_0052.jpg",
       "activities": "During the month of April, Tulips Festival is a must. Pictures don\'t do it justice! Remember to take an earlier exit, Exit 225 (I believe) instead of Exit 226 and take the back roads from there, so you are not stuck in a line of cars for one hour trying to get there.",
       "address": "311 W Kincaid St, Mt Vernon, WA 98273",
       "website": "www.tulipfestival.org"
