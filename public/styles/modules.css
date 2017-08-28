@@ -5,17 +5,17 @@
 .icon-menu {
   font-size: 3.1em;
   float: right;
+  display: block;
 }
 
 h1 {
-  line-height: 5;
   font-size: 60px;
   float: left;
   width: 100%;
 }
 
 #welcome {
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: block;
   float: left;
@@ -39,21 +39,34 @@ h1 {
   width: 100%;
 }*/
 
-.main-nav{
+.main-nav {
   display: block;
   float: left;
   width: 100%;
   background-color: #808080;
 }
 
-@media only screen and (min-width: 0px) {
+.main-nav>ul {
+  display: inline-block;
+}
+
+.schoolImage {
+  max-width: 70%;
+}
+
+#hidden {
+  display: none;
+}
+@media only screen and (min-width: 500px) {
+  #hidden {
+    display: initial;
+  }
+  
   .icon-menu {
     display: none;
   }
 
-  .main-nav {
-    padding: .2em .2em .2em 2em;
-  }
+
 
   .main-nav ul {
     display: block;
@@ -72,3 +85,16 @@ h1 {
     float: none;
   }
 }
+
+.template {
+  display: none;
+}
+
+.clearfix {
+  margin-bottom: 20px;
+}
+
+/*#education #work-experience {
+  font-size: 25px;
+  font-weight: bold;
+}*/
