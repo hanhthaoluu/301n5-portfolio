@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HanhThao Luu's Portfolio</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v4.0.10.js"></script>
+
+    <meta name = "viewport" content = "width = device-width, initial-scale =1" />
+    <link rel="stylesheet" href="styles/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Oleo+Script:700|Tangerine:700" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
+    <link rel="stylesheet" href="styles/icons.css">
+
+    <script id="article-template" type="text/x-handlebars-template">
+      <article class="clearfix">
+      <div class="place"><em>{{place}}</em></div>
+      <img class="picture" src="{{picture}}">
+      <div class="activities">{{{activities}}}</div>
+      <div class="address">{{address}}</div>
+      <a href="{{website}}" class="website">{{website}}</a>
+      </article>
+    </script>
+
+    <script id="education-template" type="text/x-handlebars-template">
+      <article class="clearfix">
+      <img class="schoolImage" src="{{schoolImage}}">
+      <div class="school"><em>{{School}}</em></div>
+      <div class="location">{{Location}}</div>
+      <div class="degreeCertificate">{{{Degree}}}</div>
+      </article>
+    </script>
+
+
+    <script id="resume-template" type="text/x-handlebars-template">
+      <article class="clearfix">
+      <div class="title"><em>{{Title}}</em></div>
+      <div class="duration">{{Duration}}</div>
+      <div class="employer">{{Employer}}</div>
+      <div class="city">{{City}}</div>
+      <div class="description">{{Description}}</div>
+      </article>
+    </script>
+  </head>
+  <body>
+
+    <div id="welcome">
+      <nav class="main-nav">
+        <div class="icon-menu">
+        </div>
+        <ul id="hidden">
+          <li id="home"><a href="#">Home</a></li>
+          <li id="resume"><a href="#">Resume</a></li>
+          <li id="portfolio"><a href="#">Portfolio</a></li>
+          <li id="seattleOutdoors"><a href="#">Seattle Outdoors</a></li>
+        </ul>
+      </nav>
+
+      <h1>Welcome to Thao's Page!</h1>
+      <div class="content">
+        <div id="content-home">
+          <img id="myHomePicture" src="images/IMG_0093_2.jpg"/>
+          <div class="page-content" id="opening-statement">Hello! My name is Hanh-Thao Luu (Thao).</div>
+            <p> I live in Seattle WA. <br />
+            Currently, I am enrolling at Code Fellows to master programming. <br />
+            My career goal is to become a software-developer. <br />
+            I am a self-motivated, persistent and diligent person. <br />
+            I like to think creatively to make the impossible possible. <br />
+            My goals in life are to be an excellent software developer, <br />
+            a loving and supportive mother of two wonderful kids, and <br />
+            a responsible citizen contributing to make life better for the humankind<br />
+            and to preserve Earth.</p>
+        </div>
+        <div id="content-resume">
+          <div id="schools"></div>
+          <div id="work"></div>
+        </div>
+
+        <div id="content-portfolio"></div>
+        <div id="content-seattleOutdoors"></div>
+      </div>
+    </div>
+
+
+
+
+    <!-- <div class="myHomePictureContainer">
+      <img id="myHomePicture" src="images/IMG_0093_2.jpg"/>
+    </div> -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/resumeData.js"></script>
+        <script src="scripts/resume.js"></script>
+        <script src="scripts/seattleOutdoors.js"></script>
+        <!-- <script src="scripts/outdoors.js"></script> -->
+        <!-- <script>
+          Article.fetchAll();
+        </script> -->
+  </body>
+</html>
