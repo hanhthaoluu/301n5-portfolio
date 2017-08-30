@@ -17,11 +17,12 @@
 
     <script id="article-template" type="text/x-handlebars-template">
       <article class="clearfix">
-      <div class="place"><em>{{place}}</em></div>
-      <img class="picture" src="{{picture}}">
-      <div class="activities">{{{activities}}}</div>
-      <div class="address">{{address}}</div>
-      <a href="{{website}}" class="website">{{website}}</a>
+        <div class="place"><em>{{place}}</em></div>
+        <div class="activities">{{{activities}}}</div>
+        <a href="#" class="read-on">Read on &rarr;</a>
+        <img class="picture" src="{{picture}}">
+        <div class="address">{{address}}</div>
+        <a href="{{website}}" class="website">{{website}}</a>
       </article>
     </script>
 
@@ -100,11 +101,18 @@
     <!-- <div class="myHomePictureContainer">
       <img id="myHomePicture" src="images/IMG_0093_2.jpg"/>
     </div> -->
+        <script src="/githubToken.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/resumeData.js"></script>
         <script src="scripts/resume.js"></script>
         <script src="scripts/seattleOutdoors.js"></script>
-        <script src="scripts/repo.js"></script>
-        <script src="/githubToken.js"></script>
+
+        <script src="scripts/views/seattleOutdoorsView.js"></script>
+        <script src="scripts/controllers/seattleOutdoorsController.js"></script>
+
+        <script src="scripts/models/repo.js"></script>
+        <script src="scripts/views/repoView.js"></script>
+        <script src="scripts/controllers/routes.js"></script>
+
   </body>
 </html>
