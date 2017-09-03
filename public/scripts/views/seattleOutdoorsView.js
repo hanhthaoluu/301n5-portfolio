@@ -6,6 +6,7 @@ var app = app || {};
 
 
   seattleOutdoorsView.setTeasers = function() {
+    console.log('hi setTeasers');
     app.SeattleOutdoors.all.map(function(value) {
       var source = $('#article-template').html();
       var template = Handlebars.compile(source);

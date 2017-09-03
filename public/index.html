@@ -5,7 +5,7 @@
     <title>HanhThao Luu's Portfolio</title>
     <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v4.0.10.js"></script>
-    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+
     <meta name = "viewport" content = "width = device-width, initial-scale =1" />
     <link rel="stylesheet" href="styles/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -68,7 +68,7 @@
           <li id="home"><a href="#">Home</a></li>
           <li id="resume"><a href="#">Resume</a></li>
           <li id="portfolio"><a href="#">Portfolio</a></li>
-          <li id="seattleOutdoors"><a href="#">Seattle Outdoors</a></li>
+          <li id="seattleOutdoors"><a href="/seattleOutdoors">Seattle Outdoors</a></li>
         </ul>
       </nav>
 
@@ -101,18 +101,20 @@
     <!-- <div class="myHomePictureContainer">
       <img id="myHomePicture" src="images/IMG_0093_2.jpg"/>
     </div> -->
-        <script src="/githubToken.js"></script>
+        <!-- <script src="/githubToken.js"></script> -->
         <script src="scripts/app.js"></script>
         <script src="scripts/resumeData.js"></script>
         <script src="scripts/resume.js"></script>
 
-        <script src="scripts/models/seattleOutdoors.js"></script>
-        <script src="scripts/views/seattleOutdoorsView.js"></script>
-        <script src="scripts/controllers/seattleOutdoorsController.js"></script>
 
-        <script src="scripts/models/repo.js"></script>
-        <script src="scripts/views/repoView.js"></script>
-        <script src="scripts/controllers/routes.js"></script>
+        <script src="/scripts/models/seattleOutdoors.js"></script>
+        <script src="/scripts/views/seattleOutdoorsView.js"></script>
+        <script src="/scripts/controllers/seattleOutdoorsController.js"></script>
+
+        <!-- <script src="/scripts/models/repo.js"></script>
+        <script src="/scripts/views/repoView.js"></script> -->
+        <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+        <script src="/scripts/controllers/routes.js"></script>
 
   </body>
 </html>

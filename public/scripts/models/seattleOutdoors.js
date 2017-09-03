@@ -10,6 +10,7 @@ var app = app || {};
   SeattleOutdoors.all = [];
 
   SeattleOutdoors.fetchAll = callback => {
+    console.log('hello SeattleOutdoors.fetchAll')
     $.getJSON('./data/seattleOutdoors.json', function(data) {
       $.each(data, function(index, value) {
         var location = new SeattleOutdoors(value);
@@ -19,10 +20,9 @@ var app = app || {};
         // var template = Handlebars.compile(source);
         // var html = template(value);
         // $('#content-seattleOutdoors').append(html);
-      });
-    }).fail(function(res, text, error){
-      console.log(error);
-    }).then(callback);
+      })
+    })
+    .then(callback);
   };
 
   module.SeattleOutdoors = SeattleOutdoors;

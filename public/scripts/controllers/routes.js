@@ -2,8 +2,11 @@
 
 var app = app || {};
 
-page('/', app.homeController.index);
-page('/resume', app.resumeController.index);
-page('/portfolio', app.portfolioController.index);
-page('/seattleOutdoors', app.seattleOutdoorsController.index);
+// page('/', app.homeController);
+// page('/resume', app.resumeController);
+// page('/portfolio', app.portfolioController);
+// page('/seattleOutdoors', app.seattleOutdoorsController.index);
+page('/seattleOutdoors', () => {
+  console.log('hi routes!');
+});
 page();
