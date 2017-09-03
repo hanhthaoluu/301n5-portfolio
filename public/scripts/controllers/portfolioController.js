@@ -6,7 +6,8 @@ var app = app || {};
   const portfolioController = {};
 
   portfolioController.index = () => {
-    $('#content-portfolio').show().siblings().hide();
+    $('.content').children().hide();
+    $('#content-portfolio').show();
     app.repos.requestRepos(app.repoView.index);
   };
 
