@@ -56,7 +56,7 @@
     <script id="repo-template" type="text/x-handlebars-template">
       <li>
         <a href="{{html_url}}" target="_blank">
-          <h3>{{My GitHub Repos}}</h3>
+          <h3>{{name}}</h3>
         </a>
         <p>Description: {{description}}</p>
         <p>Language: {{language}}</p>
@@ -94,7 +94,7 @@
     <!-- <div class="myHomePictureContainer">
       <img id="myHomePicture" src="images/IMG_0093_2.jpg"/>
     </div> -->
-        <!-- <script src="/githubToken.js"></script> -->
+        <script src="/githubToken.js"></script>
         <script src="/scripts/models/home.js"></script>
         <script src="/scripts/views/homeView.js"></script>
         <script src="/scripts/controllers/homeController.js"></script>
@@ -111,8 +111,9 @@
         <script src="/scripts/views/seattleOutdoorsView.js"></script>
         <script src="/scripts/controllers/seattleOutdoorsController.js"></script>
 
-        <!-- <script src="/scripts/models/repo.js"></script>
-        <script src="/scripts/views/repoView.js"></script> -->
+        <script src="/scripts/models/repo.js"></script>
+        <script src="/scripts/views/repoView.js"></script>
+        <script src="/scripts/controllers/repoController.js"></script>
         <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
         <script src="/scripts/controllers/routes.js"></script>
 

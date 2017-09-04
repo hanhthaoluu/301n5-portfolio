@@ -14,6 +14,7 @@ var app = app || {};
       }
     })
       .then(results => {
+        //debugger;
         repos.all = results
         callback();
       }, error => {

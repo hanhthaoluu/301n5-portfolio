@@ -3,13 +3,14 @@
 var app = app || {};
 
 (function(module) {
-  const portfolioController = {};
+  const repoController = {};
 
-  portfolioController.index = () => {
+  repoController.index = () => {
     $('.content').children().hide();
     $('#content-portfolio').show();
+    console.log('hi repoController.index');
     app.repos.requestRepos(app.repoView.index);
   };
 
-  module.portfolioController = portfolioController;
+  module.repoController = repoController;
 })(app);

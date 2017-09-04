@@ -8,9 +8,7 @@ var app = app || {};
   // REVIEW: Private methods declared here live only within the scope of the wrapping IIFE.
   const ui = function() {
     let $portfolio = $('#content-portfolio');
-
-    $about.find('ul').empty();
-    $about.show().siblings().hide();
+    $portfolio.find('ul').empty();
   };
 
   const render = Handlebars.compile($('#repo-template').text());
@@ -22,6 +20,5 @@ var app = app || {};
       app.repos.with('name').map(render)
     );
   };
-
   module.repoView = repoView;
 })(app);
