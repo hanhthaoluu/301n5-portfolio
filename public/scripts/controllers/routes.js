@@ -3,7 +3,8 @@
 var app = app || {};
 
 page('/', app.homeController.index);
-page('/resume', app.resumeController.index);
-page('/portfolio', app.portfolioController.index);
+page('/education', app.educationController.index);
+page('/workExperience', app.resumeController.index);
+// page('/portfolio', app.portfolioController);
 page('/seattleOutdoors', app.seattleOutdoorsController.index);
 page();

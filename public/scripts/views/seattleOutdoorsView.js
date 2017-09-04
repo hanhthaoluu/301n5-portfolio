@@ -1,28 +1,24 @@
 'use strict';
+
 var app = app || {};
 
 (function(module) {
   const seattleOutdoorsView = {};
 
 
-  seattleOutdoorsView.setTeasers = function() {
-    app.SeattleOutdoors.all.map(function(value) {
+  seattleOutdoorsView.view = function() {
+    var htmlAll = app.SeattleOutdoors.all.map(function(value) {
       var source = $('#article-template').html();
       var template = Handlebars.compile(source);
-      var html = template(value);
-      $('#content-seattleOutdoors').append(html);
+      return template(value);
     });
-    // $('.place').show().siblings().hide();
-    // $('article').on('click', 'a.read-on', function(e) {
-    //   e.preventDefault();
-    //   if ($(this).text() === 'Read on →') {
-    //     $(this).siblings().fadeIn();
-    //     $(this).html('Show Less &larr;');
-    //   } else {
-    //     $(this).html('Read on &rarr;');
-    //     $(this).siblings().hide();
-    //   }
-  };
+
+    var result = htmlAll.reduce(function(accumulator, currentValue) {
+      return accumulator + currentValue;
+    });
+
+    $('#content-seattleOutdoors').html(result);
+  }
 
   module.seattleOutdoorsView = seattleOutdoorsView;
 })(app);
