@@ -8,6 +8,7 @@ var app = app || {};
   repoController.index = () => {
     $('.content').children().hide();
     $('#content-portfolio').show();
+    console.log('hi repoController.index');
     app.repos.requestRepos(app.repoView.index);
   };
 
