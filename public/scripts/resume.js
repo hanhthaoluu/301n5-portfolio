@@ -1,3 +1,8 @@
+'use strict';
+
+var app = app || {};
+
+(function() {
 
     $.getJSON('./data/resumeData.json', function(data) {
       $.each(data, function(index, value) {
@@ -18,3 +23,4 @@
         $('#schools').append(html);
       });
     });
+})(app);

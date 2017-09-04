@@ -1,15 +1,26 @@
 'use strict';
 
 const express = require('express');
-
+const sa = require('superagent');
 const app = express();
 const PORT  = process.env.PORT || 3000;
 
 app.use(express.static('./public'));
 
 app.listen(PORT, function() {
-  console.log(`you are hosted on PORT 3000 ${PORT}`);
+  console.log(`you are hosted on port ${PORT}`);
 });
 
-//go to terminal, type in npm start
-//go to browser, type in  localhost:3000
+////will do this later
+// app.get('/repos', (req, res) => {
+//   sa.get('https://api.github.com/user/repos')
+//     .set('Authorization', `token ${process.env.GITHUB_TOKEN}`)
+//     .end((err, result) => {
+//       if(err) console.log(err);
+//       res.send(result.body);
+//     });
+// });
+
+app.set('/*', (request, response) => {
+  response.sendFile('index.html', {root: './public'});
+});
