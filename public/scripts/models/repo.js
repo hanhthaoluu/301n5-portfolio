@@ -6,6 +6,7 @@ var app = app || {};
 
   repos.all = [];
   repos.requestRepos = function(callback) {
+    //call my server
     $.ajax({
       url: '/repos',
       method: 'GET',
