@@ -1,11 +1,14 @@
 'use strict';
+
 var app = app || {};
 
-(function() {
+(function(module) {
   const resumeView = {};
 
   resumeView.view = function() {
     $('#content-resume').html('');
+
+    console.log('hi resumeView.view');
 
     app.Resume.all.map(function(value) {
       var source = $('#resume-template').html();

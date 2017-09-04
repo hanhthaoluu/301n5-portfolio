@@ -7,7 +7,7 @@ var app = app || {};
     Object.keys(rawDataObj).forEach(key => this[key] = rawDataObj[key]);
   }
 
-Resume.all = [];
+  Resume.all = [];
 
   Resume.fetchAll = callback => {
     $.getJSON('./data/resumeData.json', function(data) {

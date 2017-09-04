@@ -5,6 +5,7 @@ var app = app || {};
   const resumeController = {};
 
   resumeController.index = () => {
+    console.log('hi resumeController');
     app.Resume.fetchAll(app.resumeView.view);
 
     $('.content').children().hide();
@@ -12,5 +13,5 @@ var app = app || {};
   };
 
   module.resumeController = resumeController;
-  
+
 })(app);

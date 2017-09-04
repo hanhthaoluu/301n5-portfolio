@@ -10,7 +10,6 @@ var app = app || {};
   SeattleOutdoors.all = [];
 
   SeattleOutdoors.fetchAll = callback => {
-    console.log('hello SeattleOutdoors.fetchAll')
     $.getJSON('./data/seattleOutdoors.json', function(data) {
       SeattleOutdoors.all = data.map(ele => new SeattleOutdoors(ele));
     })

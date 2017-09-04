@@ -2,13 +2,9 @@
 
 var app = app || {};
 
-page('/', function () {
-  console.log('hi home');
-});
-// page('/resume', app.resumeController);
+page('/', app.homeController.index);
+page('/education', app.educationController.index);
+page('/workExperience', app.resumeController.index);
 // page('/portfolio', app.portfolioController);
 page('/seattleOutdoors', app.seattleOutdoorsController.index);
-// page('/seattleOutdoors', function () {
-//   console.log('hi routes!');
-// });
 page();
