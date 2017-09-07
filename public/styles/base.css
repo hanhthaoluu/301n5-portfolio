@@ -21,6 +21,11 @@ height: 100%;
   font-size: 80px;
 }
 
+h2 {
+  font-family: 'Oleo Script', cursive;
+  font-size: 30px;
+}
+
 #opening-statement {
   display: block;
 }
