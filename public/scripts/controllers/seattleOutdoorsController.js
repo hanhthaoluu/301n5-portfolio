@@ -6,7 +6,7 @@ var app = app || {};
   const seattleOutdoorsController = {};
 
   seattleOutdoorsController.index = () => {
-    app.SeattleOutdoors.fetchAll(app.seattleOutdoorsView.view);
+    app.SeattleOutdoors.fetchAll(app.seattleOutdoorsView.index);
     $('.content').children().hide();
     $('#content-seattleOutdoors').show();
   };

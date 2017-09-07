@@ -5,20 +5,20 @@ var app = app || {};
 (function(module) {
   const seattleOutdoorsView = {};
 
+  const ui = function() {
+    let $seattleOutdoors = $('#content-seattleOutdoors');
+    $seattleOutdoors.find('ul').empty();
+  };
 
-  seattleOutdoorsView.view = function() {
-    var htmlAll = app.SeattleOutdoors.all.map(function(value) {
-      var source = $('#article-template').html();
-      var template = Handlebars.compile(source);
-      return template(value);
-    });
+  const render = Handlebars.compile($('#article-template').text());
 
-    var result = htmlAll.reduce(function(accumulator, currentValue) {
-      return accumulator + currentValue;
-    });
+  seattleOutdoorsView.index = function() {
+    ui();
 
-    $('#content-seattleOutdoors').html(result);
-  }
+    $('#content-seattleOutdoors ul').append(
+      app.SeattleOutdoors.all.map(render)
+    );
+  };
 
   module.seattleOutdoorsView = seattleOutdoorsView;
 })(app);
