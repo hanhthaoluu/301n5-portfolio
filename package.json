@@ -20,6 +20,7 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "page": "^1.7.1",
-    "superagent": "^3.6.0"
+    "superagent": "^3.6.0",
+    "express-request-proxy": "^2.0.0"
   }
 }
