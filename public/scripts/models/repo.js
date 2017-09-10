@@ -5,12 +5,9 @@ var app = app || {};
   const repos = {};
 
   repos.all = [];
+  
   repos.requestRepos = function(callback) {
-    //call my server
-    $.ajax({
-      url: '/repos',
-      method: 'GET',
-    })
+    $.get('/github/user/repos')
       .then(results => {
         //debugger;
         repos.all = results
@@ -18,7 +15,7 @@ var app = app || {};
       }, error => {
         console.log(error);
       })
-  }
+  };
 
   repos.with = attr => repos.all.filter(repo => repo[attr]);
 
